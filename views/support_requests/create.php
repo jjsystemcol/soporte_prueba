@@ -11,7 +11,7 @@
 <body>
   <div class="container mt-4">
     <h1>Crear solicitud de soporte</h1>
-    <form action="/support_requests/create" method="POST">
+    <form action="/SupportRequestController/create" method="POST">
       <div class="mb-3">
         <label for="title" class="form-label">Asunto</label>
         <input type="text" name="title" id="title" class="form-control" required>

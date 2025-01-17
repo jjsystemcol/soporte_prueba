@@ -11,7 +11,7 @@
 <body>
   <div class="container mt-4">
     <h1>Editar solicitud de soporte</h1>
-    <form action="/support_requests/edit/<?= htmlspecialchars($request['id']) ?>" method="POST">
+    <form action="/SupportRequestController/edit/<?= htmlspecialchars($request['id']) ?>" method="POST">
       <div class="mb-3">
         <label for="title" class="form-label">Asunto</label>
         <input type="text" name="title" id="title" class="form-control" value="<?= htmlspecialchars($request['title']) ?>" required>

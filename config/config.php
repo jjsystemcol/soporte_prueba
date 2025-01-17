@@ -1,6 +1,6 @@
 <?php
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'support_requests');
+define('DB_NAME', 'support_system');
 define('DB_USER', 'root');
 define('DB_PASS', 'vwr00t');
 

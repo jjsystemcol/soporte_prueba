@@ -1,12 +1,12 @@
 <?php
-class SupportRequestController extends Controller
-{
-  public function index()
-  {
-    $model = new SupportRequest();
-    $data = $model->getAll();
-    $this->view('support_requests/index', ['requests' => $data]);
-  }
+require_once realpath(__DIR__ . '/../models/SupportRequest.php');
+
+class SupportRequestController extends Controller {
+    public function index() {
+        $model = new SupportRequest(); // Asegúrate de que esta clase exista
+        $data = $model->getAll();
+        $this->view('support_requests/index', ['requests' => $data]);
+    }
 
   public function create()
   {
