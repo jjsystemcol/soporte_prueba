@@ -11,7 +11,7 @@
 <body>
   <div class="container mt-4">
     <h1>Solicitudes de soporte</h1>
-    <a href="/support_requests/create" class="btn btn-primary mb-3">Crear solicitud</a>
+    <a href="/SupportRequest/create" class="btn btn-primary mb-3">Crear solicitud</a>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -30,8 +30,8 @@
             <td><?= htmlspecialchars($request['description']) ?></td>
             <td><?= htmlspecialchars($request['status']) ?></td>
             <td>
-              <a href="/support_requests/edit/<?= $request['id'] ?>" class="btn btn-warning btn-sm">Editar</a>
-              <a href="/support_requests/delete/<?= $request['id'] ?>" class="btn btn-danger btn-sm">Eliminar</a>
+              <a href="/SupportRequest/edit/<?= $request['id'] ?>" class="btn btn-warning btn-sm">Editar</a>
+              <a href="/SupportRequest/delete/<?= $request['id'] ?>" class="btn btn-danger btn-sm">Eliminar</a>
             </td>
           </tr>
         <?php endforeach; ?>

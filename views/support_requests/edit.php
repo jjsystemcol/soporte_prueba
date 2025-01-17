@@ -11,7 +11,7 @@
 <body>
   <div class="container mt-4">
     <h1>Editar solicitud de soporte</h1>
-    <form action="/SupportRequestController/edit/<?= htmlspecialchars($request['id']) ?>" method="POST">
+    <form action="/SupportRequest/edit/<?= htmlspecialchars($request['id']) ?>" method="POST">
       <div class="mb-3">
         <label for="title" class="form-label">Asunto</label>
         <input type="text" name="title" id="title" class="form-control" value="<?= htmlspecialchars($request['title']) ?>" required>
@@ -29,7 +29,7 @@
         </select>
       </div>
       <button type="submit" class="btn btn-primary">Actualizar</button>
-      <a href="/support_requests" class="btn btn-secondary">Cancelar</a>
+      <a href="/SupportRequest" class="btn btn-secondary">Cancelar</a>
     </form>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
