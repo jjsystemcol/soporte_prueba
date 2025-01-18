@@ -18,7 +18,7 @@ class SupportRequestController extends Controller {
       ];
       $model = new SupportRequest();
       $model->create($data);
-      header('Location: /support_requests');
+      header('Location: /SupportRequest');
     } else {
       $this->view('support_requests/create');
     }
@@ -34,7 +34,7 @@ class SupportRequestController extends Controller {
         'status' => $_POST['status'],
       ];
       $model->update($id, $data);
-      header('Location: /support_requests');
+      header('Location: /SupportRequest');
     } else {
       $data = $model->getById($id);
       $this->view('support_requests/edit', ['request' => $data]);
@@ -45,6 +45,6 @@ class SupportRequestController extends Controller {
   {
     $model = new SupportRequest();
     $model->delete($id);
-    header('Location: /support_requests');
+    header('Location: /SupportRequest');
   }
 }
